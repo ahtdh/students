@@ -15,6 +15,7 @@ class CreateProfsTable extends Migration
     {
         Schema::create('profs', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('group_id')->nullable();
             $table->string('name');
             $table->unsignedBigInteger('prof_code');
             $table->tinyInteger('type')->nullable();

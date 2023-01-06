@@ -18,7 +18,7 @@ class CreateStudentsTable extends Migration
             $table->string('name');
             $table->timestamp('birth_date')->nullable();
             $table->unsignedBigInteger('student_code');
-            $table->unsignedBigInteger('supervisor_id');
+            $table->unsignedBigInteger('supervisor_id')->nullable();
             $table->timestamps();
         });
     }

@@ -10,4 +10,8 @@ class Group extends Model
     use HasFactory;
     protected $guarded =[];
 
+    public function profs()
+    {
+        return $this->hasOne(Prof::class);
+    }
 }
