@@ -20,93 +20,93 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div class="container px-4 " style="direction: rtl">
     <div class="text-right">
-        <a  href="{{route('creatStudent')}}" class="text-dark">ایجاد دانشجو</a>
+        <a  href="{{route('creatStudent')}}" class="text-dark" target="_blank">ایجاد دانشجو</a>
         <br>
-        <a href="{{route('creatStudent')}}">{{route('creatStudent')}}</a>
+        <a href="{{route('creatStudent')}}" target="_blank">{{route('creatStudent')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getStudents')}}" class="text-dark">نمایش دانشجو</a>
+        <a  href="{{route('getStudents')}}" class="text-dark" target="_blank">نمایش دانشجو</a>
         <br>
-        <a href="{{route('getStudents')}}">{{route('getStudents')}}</a>
+        <a href="{{route('getStudents')}}" target="_blank">{{route('getStudents')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('createProf')}}" class="text-dark">ایجاد استاد</a>
+        <a  href="{{route('createProf')}}" class="text-dark" target="_blank">ایجاد استاد</a>
         <br>
-        <a href="{{route('createProf')}}">{{route('createProf')}}</a>
+        <a href="{{route('createProf')}}" target="_blank">{{route('createProf')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getProfs')}}" class="text-dark">نمایش اساتید</a>
+        <a  href="{{route('getProfs')}}" class="text-dark" target="_blank">نمایش اساتید</a>
         <br>
-        <a href="{{route('getProfs')}}">{{route('getProfs')}}</a>
+        <a href="{{route('getProfs')}}" target="_blank">{{route('getProfs')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('createGCourse')}}" class="text-dark">ایجاد درس</a>
+        <a  href="{{route('createGCourse')}}" class="text-dark" target="_blank">ایجاد درس</a>
         <br>
-        <a href="{{route('createGCourse')}}">{{route('createGCourse')}}</a>
+        <a href="{{route('createGCourse')}}" target="_blank">{{route('createGCourse')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getCourses')}}" class="text-dark">نمایش دروس</a>
+        <a  href="{{route('getCourses')}}" class="text-dark" target="_blank">نمایش دروس</a>
         <br>
-        <a href="{{route('getCourses')}}">{{route('getCourses')}}</a>
+        <a href="{{route('getCourses')}}" target="_blank">{{route('getCourses')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('createGroup')}}" class="text-dark">ایجاد گروه درسی</a>
+        <a  href="{{route('createGroup')}}" class="text-dark" target="_blank">ایجاد گروه درسی</a>
         <br>
-        <a href="{{route('createGroup')}}">{{route('createGroup')}}</a>
+        <a href="{{route('createGroup')}}" target="_blank">{{route('createGroup')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getGroups')}}" class="text-dark">نمایش گروه ها</a>
+        <a  href="{{route('getGroups')}}" class="text-dark" target="_blank">نمایش گروه ها</a>
         <br>
-        <a href="{{route('getGroups')}}">{{route('getGroups')}}</a>
+        <a href="{{route('getGroups')}}" target="_blank">{{route('getGroups')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('createTerm')}}" class="text-dark">ایجاد ترم درسی</a>
+        <a  href="{{route('createTerm')}}" class="text-dark" target="_blank">ایجاد ترم درسی</a>
         <br>
-        <a href="{{route('createTerm')}}">{{route('createTerm')}}</a>
+        <a href="{{route('createTerm')}}" target="_blank">{{route('createTerm')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getTerms')}}" class="text-dark">نمایش ترم ها</a>
+        <a  href="{{route('getTerms')}}" class="text-dark" target="_blank">نمایش ترم ها</a>
         <br>
-        <a href="{{route('getTerms')}}">{{route('getTerms')}}</a>
+        <a href="{{route('getTerms')}}" target="_blank">{{route('getTerms')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('searchStudents')}}" class="text-dark">1-جستجو دانشجو بر اساس نام</a>
+        <a  href="{{route('searchStudents')}}" class="text-dark" target="_blank">1-جستجو دانشجو بر اساس نام</a>
         <br>
-        <a href="{{route('searchStudents')}}">{{route('searchStudents')}}</a>
+        <a href="{{route('searchStudents')}}" target="_blank">{{route('searchStudents')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('StudentCode')}}" class="text-dark">2-جستجو دانشجو بر اساس کد دانشجویی</a>
+        <a  href="{{route('StudentCode')}}" class="text-dark" target="_blank">2-جستجو دانشجو بر اساس کد دانشجویی</a>
         <br>
-        <a href="{{route('StudentCode')}}">{{route('StudentCode')}}</a>
+        <a href="{{route('StudentCode')}}" target="_blank">{{route('StudentCode')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('ProfCode')}}" class="text-dark">3-جستجو استاد بر اساس کد استادی</a>
+        <a  href="{{route('ProfCode')}}" class="text-dark" target="_blank">3-جستجو استاد بر اساس کد استادی</a>
         <br>
-        <a href="{{route('ProfCode')}}">{{route('ProfCode')}}</a>
+        <a href="{{route('ProfCode')}}" target="_blank">{{route('ProfCode')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('nameProfCode')}}" class="text-dark">4-جستو براساس کد استادی و خروجی نام استاد</a>
+        <a  href="{{route('nameProfCode')}}" class="text-dark" target="_blank">4-جستو براساس کد استادی و خروجی نام استاد</a>
         <br>
-        <a href="{{route('nameProfCode')}}">{{route('nameProfCode')}}</a>
+        <a href="{{route('nameProfCode')}}" target="_blank">{{route('nameProfCode')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getNameGroup')}}" class="text-dark">5-جستو براساس نام گروه</a>
+        <a  href="{{route('getNameGroup')}}" class="text-dark" target="_blank">5-جستو براساس نام گروه</a>
         <br>
-        <a href="{{route('getNameGroup')}}">{{route('getNameGroup')}}</a>
+        <a href="{{route('getNameGroup')}}" target="_blank">{{route('getNameGroup')}}</a>
         <hr>
     </div>
 </div>

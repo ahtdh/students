@@ -16,16 +16,16 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">نام</label>
-                <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="مثلا امیرحسین تجعفری">
+                <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="مثلا امیرحسین تجعفری" required>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">سال تولد</label>
-                <input type="date" name="birth_date" class="form-control" id="inputPassword4" placeholder="Password">
+                <input type="date" name="birth_date" class="form-control" id="inputPassword4" placeholder="Password" required>
             </div>
         </div>
         <div class="form-group">
             <label for="inputAddress">شماره دانشجویی</label>
-            <input type="number" class="form-control" name="student_code" id="inputAddress" placeholder="39 700 720 مثلا">
+            <input type="number" class="form-control" name="student_code" id="inputAddress" placeholder="39 700 720 مثلا" required>
         </div>
         <button type="submit" class="btn btn-primary">ثبت</button>
     </form>

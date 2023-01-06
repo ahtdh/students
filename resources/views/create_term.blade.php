@@ -16,15 +16,15 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">توضیحات ترم</label>
-                <textarea name="description"  class="form-control"></textarea>
+                <textarea name="description"  class="form-control" required></textarea>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">َشروع ترم</label>
-                <input type="date" name="start_date" class="form-control" id="inputPassword4" placeholder="Password">
+                <input type="date" name="start_date" class="form-control" id="inputPassword4" required>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">پایان ترم</label>
-                <input type="date" name="end_date" class="form-control" id="inputPassword4" placeholder="Password">
+                <input type="date" name="end_date" class="form-control" id="inputPassword4" required>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">ثبت</button>

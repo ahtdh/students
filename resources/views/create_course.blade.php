@@ -16,7 +16,7 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">نام درس</label>
-                <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="مثلا کامپیوتر">
+                <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="مثلا کامپیوتر" required>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">ثبت</button>

@@ -16,11 +16,11 @@
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputEmail4">نام</label>
-                <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="مثلا کامپیوتر">
+                <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="مثلا کامپیوتر" required>
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">آدرس</label>
-                <input type="text" name="location" class="form-control" id="inputPassword4" placeholder="آدرس">
+                <input type="text" name="location" class="form-control" id="inputPassword4" placeholder="آدرس" required>
             </div>
         </div>
         <button type="submit" class="btn btn-primary">ثبت</button>
