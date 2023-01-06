@@ -6,29 +6,119 @@ use App\Models\course;
 use App\Models\Group;
 use App\Models\Prof;
 use App\Models\Student;
+use App\Models\Term;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function storeStudent(Request $request)
+    public function links()
     {
-        $student = [
-            'name' => $request->name,
-            'birth_date' => $request->birth_date,
-            'student_code' => $request->student_code,
-            'supervisor_id' => $request->supervisor_id,
-        ];
-        $st = Student::query()->create($student);
-        return redirect()->route('getStudents');
+        return view('links');
     }
 
-    public function storeCourse(Request $request)
+    public function getProfs()
     {
-        $course = [
-            'name' => $request->name,
+        $data = [
+            'profs' => Prof::all()
         ];
-        $c = course::query()->create($course);
-        return redirect()->route('getCourses');
+        return view('profs', $data);
+    }
+
+    public function getTerms()
+    {
+        $data = [
+            'terms' => Term::all()
+        ];
+        return view('terms', $data);
+    }
+
+    public function getGroups()
+    {
+        $data = [
+            'groups' => Group::all()
+        ];
+        return view('groups', $data);
+    }
+
+    public function getCourses()
+    {
+        $data = [
+            'courses' => course::all()
+        ];
+        return view('courses', $data);
+    }
+
+    public function createProf()
+    {
+        $data = [
+            'groups' => Group::all()
+        ];
+        return view('create_prof',$data);
+    }
+
+    public function createTerm()
+    {
+
+        return view('create_term');
+    }
+
+    public function createGroup()
+    {
+        return view('create_group');
+    }
+
+    public function StudentCode()
+    {
+        return view('search_code_student');
+    }
+
+    public function getStudents()
+    {
+        $data = [
+            'students' => Student::all()
+        ];
+        return view('students', $data);
+    }
+
+    public function createCourse()
+    {
+        return view('create_course',);
+    }
+
+    public function profCodeCode()
+    {
+        return view('search_code_sprof');
+    }
+
+    public function creatStudent()
+    {
+        return view('create_student');
+    }
+
+    public function searchStudents()
+    {
+        return view('search_student');
+    }
+
+    public function getNameProfCode()
+    {
+     return view('search_code_prof_output_name');
+    }
+
+    public function getSearchNameGroup()
+    {
+        return view('search_group');
+    }
+
+    public function storeTerm(Request $request)
+    {
+        $term = [
+            'description' => $request->description,
+            'end_date' => $request->end_date,
+            'start_date' => $request->start_date,
+        ];
+        $t = Term::query()->create($term);
+        return redirect()->route('getTerms');
     }
 
     public function storeProf(Request $request)
@@ -54,112 +144,54 @@ class HomeController extends Controller
         return redirect()->route('getGroups');
     }
 
-    public function storeTerm(Request $request)
+    public function storeCourse(Request $request)
     {
-        $term = [
-            'description' => $request->description,
-            'end_date' => $request->end_date,
-            'start_date' => $request->start_date,
+        $course = [
+            'name' => $request->name,
         ];
-        $t = course::query()->create($term);
+        $c = course::query()->create($course);
+        return redirect()->route('getCourses');
     }
 
-    public function getStudents()
+    public function nameProfCode(Request $request)
     {
-        $data = [
-            'students' => Student::all()
+        $profs = Prof::query()->select(['name' , 'prof_code'])->where('prof_code' , 'like','%' . $request->prof_code . '%')->get();
+        return view('name_profs' , compact('profs'));
+    }
+
+    public function storeStudent(Request $request)
+    {
+        $student = [
+            'name' => $request->name,
+            'birth_date' => $request->birth_date,
+            'student_code' => $request->student_code,
+            'supervisor_id' => $request->supervisor_id,
         ];
-        return view('students', $data);
+        $st = Student::query()->create($student);
+        return redirect()->route('getStudents');
     }
 
-    public function getProfs()
-    {
-        $data = [
-            'profs' => Prof::all()
-        ];
-        return view('profs', $data);
-    }
-
-    public function createProf()
-    {
-        $data = [
-            'groups' => Group::all()
-        ];
-        return view('create_prof',$data);
-    }
-    public function createCourse()
-    {
-        return view('create_course',);
-    }
-
-    public function createGroup()
-    {
-        return view('create_group');
-    }
-
-    public function getGroups()
-    {
-        $data = [
-            'groups' => Group::all()
-        ];
-        return view('groups', $data);
-    }
-    public function getCourses()
-    {
-        $data = [
-            'courses' => course::all()
-        ];
-        return view('courses', $data);
-    }
-
-    public function searchStudents()
-    {
-        return view('search_student');
-    }
-
-    public function searchNameStudents(Request $request)
-    {
-        $students = Student::query()->where('name' , 'like','%' . $request->name . '%')->get();
-        return view('students' , compact('students'));
-    }
-
-
-    public function creatStudent()
-    {
-        return view('create_student');
-    }
-    public function links()
-    {
-        return view('links');
-    }
-
-    public function StudentCode(Request $request)
-    {
-     return view('search_code_student');
-    }
     public function getStudentCode(Request $request)
     {
         $students = Student::query()->where('student_code' , 'like','%' . $request->name . '%')->get();
         return view('students' , compact('students'));
     }
 
-    public function profCodeCode(Request $request)
-    {
-     return view('search_code_sprof');
-    }
     public function getProfCodeCode(Request $request)
     {
         $profs = Prof::query()->where('prof_code' , 'like','%' . $request->prof_code . '%')->get();
         return view('profs' , compact('profs'));
     }
 
-    public function nameProfCode(Request $request)
+    public function searchNameGroup(Request $request)
     {
-     return view('search_code_sprof');
+        $groups = Group::query()->where('name' , 'like','%' . $request->name . '%')->get();
+        return view('groups' , compact('groups'));
     }
-    public function getNameProfCode(Request $request)
+
+    public function searchNameStudents(Request $request)
     {
-        $profs = Prof::query()->where('prof_code' , 'like','%' . $request->prof_code . '%')->get();
-        return view('profs' , compact('profs'));
+        $students = Student::query()->where('name' , 'like','%' . $request->name . '%')->get();
+        return view('students' , compact('students'));
     }
 }

@@ -31,6 +31,10 @@ Route::get('create-course' ,[HomeController::class ,'createCourse'])->name('crea
 Route::post('store-course' ,[HomeController::class ,'storeCourse'])->name('storeCourse');
 Route::get('courses' ,[HomeController::class ,'getCourses'])->name('getCourses');
 
+Route::get('create-term' ,[HomeController::class ,'createTerm'])->name('createTerm');
+Route::post('store-term' ,[HomeController::class ,'storeTerm'])->name('storeTerm');
+Route::get('terms' ,[HomeController::class ,'getTerms'])->name('getTerms');
+
 Route::post('search-name-students' ,[HomeController::class ,'searchNameStudents'])->name('searchNameStudents');
 Route::get('search-name-students' ,[HomeController::class ,'searchStudents'])->name('searchStudents');
 
@@ -42,3 +46,6 @@ Route::get('search-code-ProfCode' ,[HomeController::class ,'profCodeCode'])->nam
 
 Route::post('search-name-prof-code' ,[HomeController::class ,'nameProfCode'])->name('nameProfCode');
 Route::get('search-name-prof-code' ,[HomeController::class ,'getNameProfCode'])->name('getNameProfCode');
+
+Route::post('search-name-group' ,[HomeController::class ,'searchNameGroup'])->name('searchNameGroup');
+Route::get('search-name-group' ,[HomeController::class ,'getsearchNameGroup'])->name('getNameGroup');
