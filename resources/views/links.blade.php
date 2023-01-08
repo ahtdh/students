@@ -80,31 +80,31 @@
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('searchStudents')}}" class="text-dark" target="_blank">1-جستجو دانشجو بر اساس نام</a>
+        <a  href="{{route('searchStudents')}}" class="text-dark" target="_blank">جستجو دانشجو بر اساس نام</a>
         <br>
         <a href="{{route('searchStudents')}}" target="_blank">{{route('searchStudents')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('StudentCode')}}" class="text-dark" target="_blank">2-جستجو دانشجو بر اساس کد دانشجویی</a>
+        <a  href="{{route('StudentCode')}}" class="text-dark" target="_blank">جستجو دانشجو بر اساس کد دانشجویی</a>
         <br>
         <a href="{{route('StudentCode')}}" target="_blank">{{route('StudentCode')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('ProfCode')}}" class="text-dark" target="_blank">3-جستجو استاد بر اساس کد استادی</a>
+        <a  href="{{route('ProfCode')}}" class="text-dark" target="_blank">جستجو استاد بر اساس کد استادی</a>
         <br>
         <a href="{{route('ProfCode')}}" target="_blank">{{route('ProfCode')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('nameProfCode')}}" class="text-dark" target="_blank">4-جستو براساس کد استادی و خروجی نام استاد</a>
+        <a  href="{{route('nameProfCode')}}" class="text-dark" target="_blank">جستو براساس کد استادی و خروجی نام استاد</a>
         <br>
         <a href="{{route('nameProfCode')}}" target="_blank">{{route('nameProfCode')}}</a>
         <hr>
     </div>
     <div class="text-right">
-        <a  href="{{route('getNameGroup')}}" class="text-dark" target="_blank">5-جستو براساس نام گروه</a>
+        <a  href="{{route('getNameGroup')}}" class="text-dark" target="_blank">جستو براساس نام گروه</a>
         <br>
         <a href="{{route('getNameGroup')}}" target="_blank">{{route('getNameGroup')}}</a>
         <hr>
